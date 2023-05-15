@@ -9,12 +9,17 @@
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="_assets/_css/index.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous" />
             <script src="https://kit.fontawesome.com/a076d05399.js"></script>
             <title>Mind Bridge</title>
         </head>
         <body>
             <div class="container">
-                <input type="checkbox" id="active">
+                <input class="inputs-1" type="checkbox" id="active">
                 <label for="active" class="menu-btn"><span></span></label>
                 <label for="active" class="close"></label>
                 <div class="wrapper">
@@ -23,8 +28,7 @@
                         <li><a href="#third">O Projeto</a></li>
                         <li><a href="#fourth">Como funciona</a></li>
                         <li><a href="#fifth">Equipe</a></li>
-                        <li><a href="#sixth">Valores</a></li>
-                        <li><a href="#seventh">Contato</a></li>
+                        <li><a href="#sixth">Contato</a></li>
                     </ul>
                 </div>
                 <h1><span>M</span>ind<span>B</span>ridge</h1>
@@ -53,10 +57,10 @@
                         <label for="slide-2-trigger" class="slider">2</label>
                         <label for="slide-3-trigger" class="slider">3</label>
                     </header>
-                    <input type="radio" id="slide-1-trigger" name="slides">
+                    <input type="radio" id="slide-1-trigger" name="slides" checked>
                     <section class="slide slide-one">
                         <div class="titulo">
-                            <h1>TÍTULO</h1>
+                            <h1>PROJETO LOOK</h1>
                         </div>
                         <div class="conteudo">
                             <div class="projeto">
@@ -148,7 +152,7 @@
                             </div>
                         </div>
                     </section>
-                    <input type="radio" id="slide-2-trigger" name="slides" checked>
+                    <input type="radio" id="slide-2-trigger" name="slides">
                     <section class="slide slide-two">
                         <h1>TÍTULO</h1>
                         <div class="conteudo">
@@ -185,25 +189,182 @@
             <div class="blank"></div>
 
             <div class="container fourth" id="fourth">
-                
+                <div class="card">
+                    <input class="inputs-1" type="radio" name="select" id="slide-1" checked>
+                    <input class="inputs-1" type="radio" name="select" id="slide-2">
+                    <input class="inputs-1" type="radio" name="select" id="slide-3">
+                    <input class="inputs-1" type="checkbox" id="slideImg">
+                    <div class="carrossel">
+                        <label for="slide-1" class="slideCarrossel slide-1"></label>
+                        <label for="slide-2" class="slideCarrossel slide-2"></label>
+                        <label for="slide-3" class="slideCarrossel slide-3"></label>
+                    </div>
+                    <h1>Como funciona</h1>
+                    <div class="inner_part">
+                        <label for="slideImg" class="img">
+                            <img class="img-1" src="https://c4.wallpaperflare.com/wallpaper/978/131/617/kiz-kulesi-turkey-istanbul-maiden-s-tower-wallpaper-preview.jpg">
+                        </label>
+                        <div class="content content-1">
+                            <div class="title">Analise de expressões faciais</div>
+                            <div class="textoCarrossel">
+                                A partir de câmeras predispostas em um stand, a I.A analisa as reações de um cliente para dado produto. Com as interações do cliente sobre o produto, por exemplo, expressões faciais, métodos de interação palpável, ou tempo de foco sobre o produto, a I.A mede a receptividade e satisfação do cliente sobre aquele produto em lançamento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_part">
+                        <label for="slideImg" class="img">
+                            <img class="img-2" src="https://c4.wallpaperflare.com/wallpaper/649/96/56/ankara-cityscape-night-night-sky-wallpaper-preview.jpg">
+                        </label>
+                        <div class="content content-2">
+                            <div class="title">Avaliação da reação dos clientes</div>
+                            <div class="textoCarrossel">
+                                Avalia as diferentes formas de interação por cliente que passa pelo stand personalizado. Tem a capacidade de avaliar se o cliente está ou não satisfeito com o novo lançamento do produto, em categorias de bem aceito, aceitação moderada ou mal aceito em tempo real.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner_part">
+                        <label for="slideImg" class="img">
+                            <img class="img-3" src="https://c4.wallpaperflare.com/wallpaper/620/34/558/turkey-izmir-mountains-wallpaper-preview.jpg">
+                        </label>
+                        <div class="content content-3">
+                            <div class="title">Dashboard</div>
+                            <div class="textoCarrossel">
+                                Área em que se gera gráficos baseados nas relações do produto/cliente, da informação que foi coletada pela I.A de maneira anônima (sem armazenar dados do rosto). Exprime resultados grafistas como, classificação média (qual o nível de satisfação do cliente por porcentagem), tempo de permanência no produto, reação predominante, unidades compradas, análise de venda por período exposto, e previsão de preço e produto mais vendido (caso tenha mais de um stand).
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="blank"></div>
 
             <div class="container fifth" id="fifth">
-            
+                <div class="containerTeam">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="card__collection clear-fix">
+                                <div class="cards cards--two">
+                                    <img src="_assets/_imgs/AnaCristina.jpg" class="img-responsive" alt="Cards Image">
+                                    <span class="cards--two__rect"></span>
+                                    <span class="cards--two__tri"></span>
+                                    <p>Ana Cristina</p>
+                                    <ul class="cards__list">
+                                        <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/hp" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card__collection clear-fix">
+                                <div class="cards cards--two">
+                                    <img src="_assets/_imgs/LucasAlmeida.jpg" class="img-responsive" alt="Cards Image">
+                                    <span class="cards--two__rect"></span>
+                                    <span class="cards--two__tri"></span>
+                                    <p>Lucas Almeida</p>
+                                    <ul class="cards__list">
+                                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/hp" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="card__collection clear-fix">
+                                <div class="cards cards--two">
+                                    <img src="_assets/_imgs/LucasLima.jpg" class="img-responsive" alt="Cards Image">
+                                    <span class="cards--two__rect"></span>
+                                    <span class="cards--two__tri"></span>
+                                    <p>Lucas de Lima</p>
+                                    <ul class="cards__list">
+                                        <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/hp" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="blank"></div>
 
             <div class="container sixth" id="sixth">
-            
-            </div>
+                <div class="formContainer">
+                    <input type="checkbox" id="flip">
+                    <div class="cover">
+                        <div class="front">
+                            <img src="_assets/_imgs/banner.jpg" alt="">
+                            <div class="textForm">
+                                <span class="textForm-1">Entre em contato com nossa empresa para saber mais.</span>
+                                <span class="textForm-2"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="textForm">
+                                <span class="textForm-1">Entre em contato com nossa empresa para saber mais.</span>
+                                <span class="textForm-2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forms">
+                        <div class="form-content">
+                            <div class="login-form">
+                                <div class="title">Login</div>
+                                <form action="">
+                                    <div class="input-boxes">
+                                        <div class="input-box">
+                                            <i class="fas fa-envelope"></i>
+                                            <input type="email" placeholder="Insira seu email" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <i class="fas fa-lock"></i>
+                                            <input type="password" placeholder="Insira sua senha" required>
+                                        </div>
+                                        <div class="textLoginForm"><a href="">Esquecia senha.</a></div>
+                                        <div class="button input-box">
+                                            <input type="submit" value="Entrar">
+                                        </div>
+                                        <div class="textLoginForm login-text">Não tem conta? <label for="flip">Cadastre-se</label></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="signup-form">
+                                <div class="title">Cadastrar</div>
+                                <form action="">
+                                    <div class="input-boxes">
+                                        <div class="input-box">
+                                            <i class="fas fa-user"></i>
+                                            <input type="text" placeholder="Insira seu nome" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <i class="fas fa-envelope"></i>
+                                            <input type="email" placeholder="Insira um email" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <i class="fas fa-lock"></i>
+                                            <input type="password" placeholder="Insira uma senha" required>
+                                        </div>
+                                        <div class="button input-box">
+                                            <input type="submit" value="Cadastrar">
+                                        </div>
+                                        <div class="textLoginForm sign-up-text">Já tem conta? <label for="flip">Login</label></div>
+                                    </div>
+                                </form>
 
-            <div class="blank"></div>
-
-            <div class="container seventh" id="seventh">
-            
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="blank"></div>
