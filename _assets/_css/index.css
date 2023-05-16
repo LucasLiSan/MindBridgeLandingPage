@@ -254,7 +254,7 @@ a {
 }
 
 svg {
-  height: 130px;
+  height: 10.5vh;
   fill: transparent;
   stroke-width: 10px;
   stroke-dasharray: 471;
@@ -277,7 +277,7 @@ svg {
 
 .banner h3 {
   color: #ffffff;
-  font-size: 10rem;
+  font-size: 13.5vw;
   font-weight: 300;
   text-transform: uppercase;
   display: flex;
@@ -1330,7 +1330,7 @@ header .slider {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 1000px) {
 
   .slide {
     width: 99%;
@@ -1351,7 +1351,7 @@ header .slider {
 
   .logo {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .projeto {
@@ -1359,9 +1359,6 @@ header .slider {
     text-align: justify;
   }
 
-  .banner h3 {
-    font-size: 7rem;
-  }
 
   .img1, .img2 {
     left: 0;
