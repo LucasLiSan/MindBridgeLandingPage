@@ -152,24 +152,21 @@ body {
 /*menu*/
 
 .container {
-  color: #ffffff;
+  color: #000000;
   width: 100%;
   min-height: 100vh;
+  background-color: #cecece;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(https://i.pinimg.com/originals/f4/34/e8/f434e86cdc40ef068b7783d150f8a65c.gif);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 h1 {
   font-weight: bolder;
   font-size: 5rem;
   font-style: italic;
-  color: #ffffff;
+  color: #000000;
   margin: 0;
   text-shadow: 1px 1px 1px #333;
 }
@@ -199,12 +196,11 @@ a {
 .blank,
 .other {
   width: 100%;
-  min-height: 50vh;
+  min-height: 2vh;
   background-color: #0b1a3b;
 }
 
 .second {
-  background-image:url(https://i.pinimg.com/originals/f4/34/e8/f434e86cdc40ef068b7783d150f8a65c.gif);
   background-attachment: fixed;
   height: 100vh;
   display: flex;
@@ -239,7 +235,7 @@ a {
 }
 
 .subtitulo {
-  color: #ffffff;
+  color: #000000;
   margin-top: -20px;
   text-align: center;
 }
@@ -276,7 +272,7 @@ svg {
 }
 
 .banner h3 {
-  color: #ffffff;
+  color: #000000;
   font-size: 13.5vw;
   font-weight: 300;
   text-transform: uppercase;
@@ -293,7 +289,6 @@ svg {
 }
 
 .third {
-  background-image:url(https://i.pinimg.com/originals/f4/34/e8/f434e86cdc40ef068b7783d150f8a65c.gif);
   background-attachment: fixed;
   height: 100vh;
   color: #000000;
@@ -304,7 +299,7 @@ svg {
 }
 
 .projeto {
-  color: #ffffff;
+  color: #000000;
   max-width: 55%;
   text-align: left;
   text-transform: uppercase;
@@ -319,7 +314,6 @@ svg {
 }
 
 .fourth {
-  background-image:url(https://i.pinimg.com/originals/f4/34/e8/f434e86cdc40ef068b7783d150f8a65c.gif);
   background-attachment: fixed;
   height: 100vh;
   display: flex;
@@ -528,7 +522,7 @@ section {
 }
 
 .wrap h1 {
-  color: #ffffff;
+  color: #000000;
   font-size: 6vw;
   line-height: 1.2;
   text-shadow: 1px 1px 1px #333;
