@@ -1,30 +1,18 @@
 html {
     scroll-behavior: smooth;
-<<<<<<< HEAD
     overflow-x: hidden;
-=======
->>>>>>> 77d6fbc00ca96a9e9d0af9d784ce2889d101028c
 }
 
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-<<<<<<< HEAD
     padding: 0;
     font-family: 'Gill Sans MT';
-=======
-}
-
-nav, .menu ul {
-    display: flex;
-    align-items: center;
->>>>>>> 77d6fbc00ca96a9e9d0af9d784ce2889d101028c
 }
 
 nav {
     position: fixed;
-<<<<<<< HEAD
     display: flex;
     width: 100vw;
     height: 50px;
@@ -80,107 +68,4 @@ section {
 
 section:nth-child(odd) {
     background-color: #7c7c7c;
-=======
-    margin: 10px;
-    z-index: 999;
-    border-radius: 30px;
-    transition: 0.5s;
-    overflow: hidden;
-    background: #1d449f;
-    box-shadow: 0 8px 15px rgba(0,0,0,.2);
-}
-
-.menu {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 0;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-nav input:checked ~ .menu {
-    width: 450px;
-    padding: 10px;
-    background-color: #1d449f;
-}
-
-.menu ul {
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    list-style: none;
-    margin: 0 10px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bolder;
-    transition: 0.5s;
-}
-
-.menu img {
-    width: 40px;
-}
-
-.menu li a:hover {
-    color: #0a0a0a;
-}
-
-nav input {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    opacity: 0;
-}
-
-nav span {
-    position: absolute;
-    left: 9px;
-    width: 30px;
-    height: 4px;
-    border-radius: 50px;
-    background-color: #d62e0a;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-nav input:checked ~ span {
-    background-color: #f974a1;
-}
-
-nav span:nth-child(2) {
-    transform: translateY(-8px);
-}
-nav input:checked ~ span:nth-child(2) {
-    transform: translateY(0) rotate(-45deg);
-}
-nav span:nth-child(3) {
-    transform: translateY(8px);
-}
-nav input:checked ~ span:nth-child(3) {
-    transform: translateY(0) rotate(45deg);
-}
-
-.vidro {
-    background: rgba(255,255,255,0.21);
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.2);
-    position: absolute;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    display: block;
-}
-
-.vidro1 {
-    width: 100%;
-    height: 100%;
-    z-index: 998;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
->>>>>>> 77d6fbc00ca96a9e9d0af9d784ce2889d101028c
 }
