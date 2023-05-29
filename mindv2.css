@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,7 +23,7 @@ nav {
 }
 
 nav ul {
-    width: 46%;
+    width: 50%;
     background: #0087ffff;
     height: 50px;
     margin: 0;
@@ -69,3 +70,158 @@ section {
 section:nth-child(odd) {
     background-color: #7c7c7c;
 }
+
+#bannerRotativo {
+    height: 60vh;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    top: 9%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.slideControls {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    transform: translatex(-50%);
+    z-index: 1000;
+    list-style: none;
+    text-align: center;
+}
+
+.slider input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slideControls label {
+    display: inline-block;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #212121;
+    transition: background-color 0.2s linear;
+}
+
+#btn1:checked ~ .slideControls label[for="btn1"] {
+    background-color: #ff4081;
+}
+#btn2:checked ~ .slideControls label[for="btn2"] {
+    background-color: #ff4081;
+}
+#btn3:checked ~ .slideControls label[for="btn3"] {
+    background-color: #ff4081;
+}
+
+.slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    height: 90%;
+    opacity: 0;
+    transform: translatex(-100%);
+    transition: transform 250ms linear;
+    align-items: center;
+}
+
+.slideContent {
+    width: 400px;
+}
+
+.slideTitle {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.slideText {
+    margin-bottom: 20px;
+}
+
+.slideLink {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #ff4081;
+}
+
+.slideImage img {
+    max-width: 100%;
+    width: 320px;
+    height: 240px;
+}
+
+#btn1:checked ~ .slides .slide:nth-child(1) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn2:checked ~ .slides .slide:nth-child(2) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn3:checked ~ .slides .slide:nth-child(3) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn1:not(:checked) ~ .slides .slide:nth-child(1) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn2:not(:checked) ~ .slides .slide:nth-child(2) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn3:not(:checked) ~ .slides .slide:nth-child(3) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+  
+@keyframes swap-out {
+    0% {
+        transform: translatex(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translatex(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatex(100%);
+    }
+}
+  
