@@ -224,4 +224,150 @@ section:nth-child(odd) {
         transform: translatex(100%);
     }
 }
-  
+
+.tituloHome {
+    display: flex;
+    position: relative;
+    top: 70px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#home h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0;
+}
+
+.navButtons {
+    position: relative;
+    top: 65px;
+    width: 100%;
+    height: 25%;
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.itens {
+    width: 15%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.itens input {
+    position: absolute;
+    top: 5%;
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+    z-index: 999;
+}
+
+.itens img {
+    width: 45%;
+}
+
+.itens label {
+    font-size: 35px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+
+.itens input[type="radio"]:checked ~ label{
+    border-bottom: solid 10px #0087ffff;
+}
+
+.wrapperCardItens {
+    display: none;
+    position: relative;
+    width: 95vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.CI1 {
+    left: 15vw;
+}
+.CI3 {
+    right: 15vw;
+}
+
+.cardsItens {
+    display: flex;
+    text-align: justify;
+    position: relative;
+    top: 2rem;
+    width: 70rem;
+    height: 30rem;
+}
+
+#item1:checked ~ .wrapperCardItens {
+    display: flex;
+}
+#item2:checked ~ .wrapperCardItens {
+    display: flex;
+}
+#item3:checked ~ .wrapperCardItens {
+    display: flex;
+}
+
+.cardItem {
+    background: #0087ff5c;
+    width: 50%;
+    margin: 20px;
+    padding: 25px;
+    text-align: justify;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+.cardItem img {
+    width: 100%;
+}
+
+.cardItem h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.cardItem p {
+    margin-top: 0;
+}
+
+.buttonCard {
+    text-align: center;
+}
+
+.btnCards {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bolder;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btnCards:hover {
+    background-color: #d62f0a;
+    color: #ffffff;
+}
+
+.btnCards:active {
+    background-color: #0b1a3b;
+    color: #ffffff;
+}
