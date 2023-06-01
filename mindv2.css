@@ -65,10 +65,7 @@ nav a:hover {
 section {
     width: 100vw;
     height: 100vh;
-}
-
-section:nth-child(odd) {
-    background-color: #7c7c7c;
+    background-color: #1a1a1a;
 }
 
 #bannerRotativo {
@@ -76,6 +73,7 @@ section:nth-child(odd) {
     box-sizing: inherit;
     padding: 0;
     margin: 0;
+    background: #ffffff;
 }
 
 .slider {
@@ -96,7 +94,7 @@ section:nth-child(odd) {
     width: 200px;
     text-align: center;
     transform: translatex(-50%);
-    z-index: 1000;
+    z-index: 997;
     list-style: none;
     text-align: center;
 }
@@ -228,23 +226,24 @@ section:nth-child(odd) {
 .tituloHome {
     display: flex;
     position: relative;
-    top: 70px;
+    top: 10%;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
 
-#home h2 {
+h4 {
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #d62f0a;
     font-size: 40px;
     margin: 0;
+    font-style: italic;
 }
 
 .navButtons {
     position: relative;
-    top: 65px;
+    top: 15%;
     width: 100%;
     height: 25%;
     display: inline-flex;
@@ -253,6 +252,8 @@ section:nth-child(odd) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background: #0b1a3b;
+    border-radius: 70px;
 }
 
 .itens {
@@ -270,7 +271,7 @@ section:nth-child(odd) {
     width: 160px;
     height: 160px;
     opacity: 0;
-    z-index: 999;
+    z-index: 997;
 }
 
 .itens img {
@@ -370,4 +371,92 @@ section:nth-child(odd) {
 .btnCards:active {
     background-color: #0b1a3b;
     color: #ffffff;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #ffffff;
+}
+
+.contentItem label, .contenIcon label {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #0087ff;
+}
+
+.contenIcon label {
+    color: #d62f0a;
+}
+
+.content img {
+    width: 30%;
+}
+
+.contentItem {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+    transition: width 1ms linear;
+}
+
+.contentItem p {
+    width: 50%;
+}
+
+#i1:hover {
+    width: 32%;
+}
+#i2:hover {
+    width: 32%;
+}
+#i3:hover {
+    width: 32%;
+}
+
+.blank {
+    height: 50px;
+    background-color: #0087ff;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link3 .content {
+    width: 80%;
+    height: 50%;
+    justify-content: space-evenly;
+    background: linear-gradient(45deg,#0087ff,rgba(0, 0, 0, 0.12), #0087ff, rgba(0, 0, 0, 0.2),#0087ff);
+    border-radius: 15px;
+}
+
+.contenIcon {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: justify;
+}
+
+.contenIcon img {
+    margin-bottom: 10px;
+}
+
+.contenIcon p {
+    width: 46%;
 }
