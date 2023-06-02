@@ -406,7 +406,7 @@ h4 {
     flex-wrap: wrap;
     align-items: center;
     text-align: justify;
-    transition: width 1ms linear;
+    transition: width 3ms linear;
 }
 
 .contentItem p {
@@ -459,4 +459,78 @@ h4 {
 
 .contenIcon p {
     width: 46%;
+}
+
+#link4, #link5 {
+    height: 50vh;
+}
+
+.teamCards {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamCard {
+    width: 30%;
+    display: flex;
+}
+
+.picTeam {
+    width: 29%;
+    border: solid #ffffff;
+    border-radius: 100px;
+    display: flex;
+    margin: 0 -115px 0 0;
+    z-index: 2;
+}
+
+.picTeam img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.infoTeam {
+    width: 71%;
+    background: linear-gradient(45deg,#0087ff,rgba(0, 0, 0, 0.12));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infoTeam h5 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
+
+.infoTeam ul {
+    width: 80%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.infoTeam li {
+    list-style: none;
+}
+
+.infoTeam a {
+    color: #ffffff;
+}
+
+.infoTeam a:hover {
+    color: #d62f0a;
 }
