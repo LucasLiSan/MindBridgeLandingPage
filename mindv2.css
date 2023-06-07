@@ -811,3 +811,92 @@ h4 {
 .formContainer #flip{
     display: none;
 }
+
+@media (max-width: 600px) {
+    .slide {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slideContent {
+        width: 80%;
+    }
+
+    .slideImage {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .navButtons {
+        height: 20%;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+
+    .itens {
+        height: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .itens img {
+        width: 100%;
+    }
+
+    .itens label {
+        font-size: 15px;
+    }
+
+    .itens input {
+        top: 25%;
+        width: 85px;
+        height: 85px;
+    }
+
+    .wrapperCardItens {
+        display: none;
+        position: absolute;
+        width: 100vw;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    #item1:checked ~ .wrapperCardItens, 
+    #item2:checked ~ .wrapperCardItens,
+    #item3:checked ~ .wrapperCardItens {
+        display: flex;
+        position: relative;
+        width: 100vw;
+        height: 0px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    .CI1 {
+        left: 0;
+    }
+
+    .cardsItens {
+        display: flex;
+        text-align: justify;
+        position: relative;
+        top: 2rem;
+        width: 33rem;
+        height: 28rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+    }
+}
